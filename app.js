@@ -6,7 +6,6 @@ const cardsRouter = require('./routes/cards.routes.js')
 
 const users = require("./data/users.json").users
 const port = 3000
-
 const secret = 'A string'
 
 const app = express()
@@ -28,7 +27,7 @@ app.post('/getToken', (req, res) => {
 })
 
 
-app.use('/cards', expressjwt({secret: secret, algorithms: ['HS256']}), cardsRouter)
+app.use('/cards', /* expressjwt({secret: secret, algorithms: ['HS256']}), */ cardsRouter)
 
 
 
