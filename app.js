@@ -20,14 +20,14 @@ app.post('/getToken', (req, res) => {
 
     const token = jwt.sign({username: user.username}, secret, {
         algorithm: 'HS256',
-        expiresIn: '2000s',
+        expiresIn: '60s',
     })
 
     return res.json({ token: token })
 })
 
 
-app.use('/cards', /* expressjwt({secret: secret, algorithms: ['HS256']}), */ cardsRouter)
+app.use('/cards', expressjwt({secret: secret, algorithms: ['HS256']}), cardsRouter)
 
 
 

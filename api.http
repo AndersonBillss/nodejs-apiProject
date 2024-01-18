@@ -9,11 +9,11 @@ Content-Type: application/json
 
 ### get all cards
 GET http://localhost:3000/cards
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzA0ODEyMjcxLCJleHAiOjE3MDQ4MTQyNzF9.W4s9eGeMZqHiVR-v9G-b0arOZ5eMqkegAxL756BNAIY
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzA1NjExMzEzLCJleHAiOjE3MDU2MTEzNzN9.Vy2m6XM-oOoiZTQX5si09CmWipJh_0rdUv--2eMlJwQ
 
 ### get cards with query parameter
 GET http://localhost:3000/cards?rarity=Rare&type=Creature&set=Expansion%20Pack
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzA0ODEyMjcxLCJleHAiOjE3MDQ4MTQyNzF9.W4s9eGeMZqHiVR-v9G-b0arOZ5eMqkegAxL756BNAIY
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzA1NjExMzEzLCJleHAiOjE3MDU2MTEzNzN9.Vy2m6XM-oOoiZTQX5si09CmWipJh_0rdUv--2eMlJwQ
 
 ### create new card
 POST http://localhost:3000/cards/create
@@ -21,10 +21,8 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkb
 Content-Type: application/json
 
 {
-    "id": 125,
     "name": "Test Card",
     "set": "Base Set",
-    "cardNumber": 26,
     "type": "Test",
     "rarity": "Test",
     "cost": 1
@@ -36,14 +34,13 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkb
 Content-Type: application/json
 
 {
-    "id": 27,
+    "id": 26,
     "name": "test",
-    "set": "test Set",
-    "cardNumber": 27,
     "type": "Creature",
     "power": 5200,
     "toughness": 4700,
-    "rarity": "Uncommon",
+    "set": "Expansion Pack",
+    "rarity": "common",
     "cost": 4
 }
 ### delete a card
@@ -52,5 +49,5 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkb
 Content-Type: application/json
 
 {
-    "id": 46
+    "id": 32
 }

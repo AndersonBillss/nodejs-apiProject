@@ -757,6 +757,15 @@
         "cost": 2
       },
       {
+        "id": 75,
+        "name": "Fire Crystal",
+        "set": "Base Set",
+        "cardNumber": 75,
+        "type": "Artifact",
+        "rarity": "Common",
+        "cost": 2
+      },
+      {
         "id": 76,
         "name": "Ancient Relic",
         "set": "Base Set",
